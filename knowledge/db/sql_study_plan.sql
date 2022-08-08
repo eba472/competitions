@@ -68,6 +68,57 @@ SELECT user_id, CONCAT(UPPER(LEFT(name, 1)), LOWER(SUBSTRING(name, 2))) AS name 
     -- WHERE CustomerName LIKE 'a%o'   Finds any values that start with "a" and ends with "o"
 
 -- MySQL REGEXP performs a pattern match of a string expression against a pattern.
-
 SELECT * FROM Patients WHERE conditions like '% DIAB1%' OR conditions like 'DIAB1%'; 
 SELECT * FROM patients WHERE conditions REGEXP '\\bDIAB1'
+
+-- 11. 1965. Employees With Missing Information
+(SELECT employee_id FROM Employees WHERE employee_id NOT IN (SELECT employee_id FROM Salaries)
+UNION  -- To join 2 tables 
+SELECT employee_id FROM Salaries WHERE employee_id NOT IN (SELECT employee_id FROM Employees))
+ORDER BY employee_id -- Add logic on unioned table use () on union.
+
+-- 12. 1795. Rearrange Products Table
+(SELECT product_id, "store1" as store, store1 as price FROM Products WHERE store1 IS NOT NULL
+UNION
+SELECT product_id, "store2" as store, store2 as price FROM Products WHERE store2 IS NOT NULL
+UNION
+SELECT product_id, "store3" as store, store3 as price FROM Products WHERE store3 IS NOT NULL);
+
+-- 13. 608. Tree Node
+SELECT id, 
+CASE 
+    WHEN p_id IS NULL THEN "Root"
+    WHEN id IN(SELECT p_id FROM Tree) THEN "Inner"
+    ELSE "Leaf"
+END AS TYPE
+FROM Tree;
+
+-- 14. 176. Second Highest Salary
+select max(salary) as SecondHighestSalary 
+from Employee
+where salary <(select max(salary) from employee);
+
+-- 15. 175. Combine Two Tables
+SELECT p.firstName, p.lastName, a.city, a.state FROM Person p LEFT JOIN Address a ON p.personId = a.personId;
+
+-- 16. 1581. Customer Who Visited but Did Not Make Any Transactions
+SELECT v.customer_id, COUNT(v.visit_id) AS count_no_trans 
+FROM Visits v LEFT JOIN Transactions t 
+ON v.visit_id = t.visit_id 
+WHERE v.visit_id NOT IN (SELECT visit_id FROM Transactions) 
+GROUP BY v.customer_id;
+
+-- 17. 1148. Article Views I
+SELECT DISTINCT author_id AS id -- Distinct will give you only unique IDs
+FROM Views WHERE author_id = viewer_id ORDER BY author_id ASC;
+
+-- 18. 197. Rising Temperature
+SELECT w1.id FROM Weather w1 LEFT JOIN Weather w2 
+    ON w2.recordDate = DATE_SUB(w1.recordDate, INTERVAL 1 DAY) 
+    WHERE w1.temperature > w2.temperature
+
+-- 19. 607. Sales Person
+SELECT s.name FROM salesperson s
+WHERE s.sales_id NOT IN (SELECT o.sales_id
+    FROM orders o LEFT JOIN company c ON o.com_id = c.com_id
+    WHERE c.name = 'RED');
