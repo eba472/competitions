@@ -122,3 +122,36 @@ SELECT s.name FROM salesperson s
 WHERE s.sales_id NOT IN (SELECT o.sales_id
     FROM orders o LEFT JOIN company c ON o.com_id = c.com_id
     WHERE c.name = 'RED');
+
+-- 20. 1141. User Activity for the Past 30 Days I
+SELECT activity_date AS day, COUNT(DISTINCT user_id) AS active_users FROM Activity -- Distinct is more useful than I thought
+WHERE activity_date > DATE_SUB(CAST('2019-07-27' AS DATE), INTERVAL 30 DAY)  -- Date comparison & CAST to date
+AND activity_date <= CAST('2019-07-27' AS DATE) GROUP BY activity_date;
+
+-- 21. 1693. Daily Leads and Partners
+SELECT date_id, make_name, COUNT(DISTINCT lead_id) AS unique_leads, COUNT(DISTINCT partner_id) AS unique_partners 
+FROM DailySales GROUP BY date_id, make_name; -- We can group by multiple columns and count multiple columns
+
+-- 22. 1729. Find Followers Count
+SELECT user_id, COUNT(DISTINCT follower_id) AS followers_count FROM Followers GROUP BY user_id;
+
+-- 23. 586. Customer Placing the Largest Number of Orders
+SELECT customer_number FROM Orders GROUP BY customer_number -- Can order by COUNT
+ORDER BY COUNT(order_number) DESC LIMIT 1; -- GET MAX By sort and limit 1
+
+HAVING COUNT(*)>3; -- The HAVING clause is used instead of WHERE clause with SQL COUNT() function.
+
+-- 24. 511. Game Play Analysis I
+SELECT player_id, MIN(event_date) AS first_login FROM Activity GROUP BY player_id; -- Can get min date by MIN, GROUP BY can be used with MIN
+-- GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()
+
+-- 25. 1890. The Latest Login in 2020
+
+WHERE YEAR(time_stamp) = 2020
+-- TIMESTAMP is YYYY-MM-DD HH:MM:SS which is fixed at 19 characters.
+-- YEAR(time_stamp) = 2020 
+
+SELECT user_id, MAX(time_stamp) AS last_stamp FROM Logins WHERE time_stamp >= '2020-01-01 00:00:00' AND time_stamp < '2021-01-01 00:00:00' GROUP BY user_id;
+
+-- 26. 1741. Find Total Time Spent by Each Employee
+SELECT event_day AS day, emp_id, SUM(out_time) - SUM(in_time) AS total_time FROM Employees GROUP BY event_day, emp_id; -- We can subtract
