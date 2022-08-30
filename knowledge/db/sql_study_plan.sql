@@ -155,3 +155,15 @@ SELECT user_id, MAX(time_stamp) AS last_stamp FROM Logins WHERE time_stamp >= '2
 
 -- 26. 1741. Find Total Time Spent by Each Employee
 SELECT event_day AS day, emp_id, SUM(out_time) - SUM(in_time) AS total_time FROM Employees GROUP BY event_day, emp_id; -- We can subtract
+
+-- 27. 1393. Capital Gain/Loss
+SELECT x.stock_name, sell - buy as capital_gain_loss FROM 
+(SELECT stock_name, SUM(PRICE) as Buy FROM Stocks WHERE operation = "Buy" GROUP BY 1 ) x  -- GROUP BY 1 : GROUP BY first column 
+JOIN
+(SELECT stock_name, SUM(PRICE) as Sell FROM Stocks WHERE operation = "Sell" GROUP BY 1 ) y
+ON x.stock_name = y.stock_name;
+
+-- 28. 1407. Top Travellers
+SELECT name, IFNULL(distance, 0) as travelled_distance  -- IFNULL(distance, 0)
+FROM Users LEFT JOIN (SELECT user_id, SUM(distance) as distance FROM Rides GROUP BY 1) x 
+ON Users.id = x.user_id ORDER BY travelled_distance DESC, name ASC; -- You can double sort
