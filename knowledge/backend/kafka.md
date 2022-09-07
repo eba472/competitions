@@ -1,0 +1,1 @@
+Apache Kafka is a distributed event store and stream-processing platform.
