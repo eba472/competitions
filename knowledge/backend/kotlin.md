@@ -26,6 +26,10 @@ fun sum(a: Int, b: Int): Int {
 }
 ```
 
+### Variables
+
+- val : declares immutable variables
+- var : declares mutable variables
 
 ### Exceptions
 - EOFException is a checked exception in Java that occurs when an end of file or end of stream is reached unexpectedly during input.
