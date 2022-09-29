@@ -32,3 +32,14 @@ AWS lambda: Event-driven, serverless computing platform
 
 
 OCR: Optical character recognition
+
+
+
+### Misc
+misc(miscellaneous): (of a collection or group) composed of members or elements of different kinds.
+
+.DS_store : Desktop services store 
+- automatically created anytime you look into a folder with ‘Finder.’ on MacOS
+- Stores custom attributes/metadata
+- Place .DS_Store in your .gitignore file
+- Dangerous: hackers can access to private info
