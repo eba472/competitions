@@ -1,0 +1,28 @@
+Essence of leader
+
+- Make sure things are getting done
+- Focus Area: 
+  - People : Right jobs for right people & Motivated
+  - System 
+  - Mission
+- Caption is always responsible for whole team
+- Everything should run fine without for a short time (Good boss)
+- Everything is management’s fault
+- monitoring
+  - Manage by walking about: just walk around and feel everything
+  - Back to the floor: We get out of touch very quickly : only good news from direct report
+  - Cascade down info boss -> boss -> Troop
+  - Team meetings 
+  - Addressing the troops once a year.
+- He who communicates, leads. (Second quadrant problem)
+- Great leaders are made not born
+  - Task gets done
+  - Make team happy
+  - Individuals has to be happy
+- 5 stages: Objective -> Planning -> Briefing -> Action -> Review
+- Performance potato : focus on exceptional qualities
+- Don’t mix praise with improvement points
+  - I know you can do it
+- There are 4 types of people:
+- If you work for money => not motivated => I should change the job
+  - Money isn’t a motivator. 
