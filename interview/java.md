@@ -36,11 +36,33 @@ Q9 What are the OOPs concepts?
 - Q12 Polymorphism : Many forms | overriding | not overloading
     - Q13 overriding (Same method name, argument, return type )
     - Q14 overloading (Same method name | diff argument types & return type )
-- Q16 Interface: Template with only method declarations (not implementations)
+- Q15 Interface: Template with only method declarations (not implementations)
   - all methods: public abstract void
   - all variables: public static final
   - implements not extend
   - Should implement every method
 - Abstraction
   - Q16 What is meant by Abstract class?
+    - Some methods are abstract(Just declaration) | => concrete Subclass
+
+Q17 Difference between Array and Array List.
+Given size | Dynamic size
+Put value by index | Can put value in the end
+
+Q18 Difference between String, String Builder, and String Buffer.
+
+String: Stored in constant string pool | cannot be erased
+String Buffer: stored in stack | synchronized <> thread safe => slower | new value => replaces old values
+String Builder: same as above but not synchronized <> Faster
+
+Q19 Explain about Public and Private access specifiers.
+Public: Can be accessed from anywhere
+Private: Can be accessed only in class
+
+Q20 Difference between Default and Protected access specifiers.
+Default: visible only inside the package
+Protected: if a class extends then it is visible even if it is outside the package.
+
+Q21 
+
 
