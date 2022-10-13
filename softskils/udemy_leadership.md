@@ -26,3 +26,28 @@ Essence of leader
 - There are 4 types of people:
 - If you work for money => not motivated => I should change the job
   - Money isn’t a motivator. 
+
+
+20 essential motivation
+
+Give ownership of something, everything should be owned by something
+Involve people in decision. Happy & better ideas
+Give everyone challenge
+Let people set their own objectives
+Do assessments 
+Make people feel secure
+info, feedback, big picture
+Give out encouragement
+Thank people once a week. water them
+Coach and support
+Know your people: everyone is diff
+Offer learning.
+Show feeling of progress. Moving toward sth.
+Offer them path of progress: learning
+Act as mentor : career? Future growth?
+Fulfilling their potential? Give more challenging tasks
+Some people motivated by novelty
+Some people motivated by friendship(part of sth)
+Built a team spirit (Feel like a team)
+Make money adequate (Must)
+Set an example (I am a positive role model)
