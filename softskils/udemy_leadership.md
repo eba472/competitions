@@ -51,3 +51,63 @@ Some people motivated by friendship(part of sth)
 Built a team spirit (Feel like a team)
 Make money adequate (Must)
 Set an example (I am a positive role model)
+
+
+Leadership styles
+
+
+
+Tannenbaum and Schmidt's leadership model
+
+Mine: delegate & Monitor(Optional) & offer support
+
+
+
+
+
+
+
+Delegate(Nothing can go wrong) => empowerment (no monitoring)
+
+If you trust, they become more trustworthy.
+Empowerment: they are not working for the company, they are the company.
+
+
+Delegate advantages (Number one management skill)
+
+Motivation
+Better quality of work
+Can learn
+Save your time
+Spread the risk
+Frees you up for vision.
+
+
+your company should be able to run without you!
+
+
+
+Don’t fear to go wrong.
+
+Don’t fear to make them better than yourself.
+
+
+
+If someone can do the task at 80%, delegate it to them (20% is in your head)
+
+They will eventually reach 100.
+Give it to people if it is a challenge
+Words to choose:
+Clearly state what you want
+Why it is important
+Why you? learn? believe?
+Limits: time? Money?
+Reporting process (Once a week?, email me?)
+Offer support?
+Check: is it ok? What would be your first step?
+Say: you can do it.
+Don’t take the monkey (Task from our people)
+Say what have you tried so far?
+Why don’t you try this?
+Come up with a plan?
+It is a failure to take the monkey
